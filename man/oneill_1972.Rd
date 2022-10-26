@@ -23,7 +23,7 @@ O'Neill model for fitting thermal performance curves
 \details{
 Equation:
 \deqn{rate = r_{max} \cdot \bigg(\frac{ct_{max} - temp}{ct_{max} - t_{opt}}\bigg)^{x} \cdot exp^{x \cdot \frac{temp - t_{opt}}{ct_{max} - t_{opt}}}}{%
-rate = rmax.(ctmax - temp / ctmax - topt)^2.exp(x.(temp-topt/ctmax-topt))}
+rate = rmax.((ctmax - temp) / (ctmax - topt))^2.exp(x.((temp-topt)/(ctmax-topt)))}
 \deqn{where: x = \frac{w^{2}}{400}\cdot\bigg(1 + \sqrt{1 + \frac{40}{w}}\bigg)^{2}}{%
 where x = (w^2/400).(1 + sqrt(1+(40/w))^2)}
 \deqn{and:\ w = (q_{10} - 1)\cdot (ct_{max} - t_{opt})}{%
